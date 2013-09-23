@@ -49,6 +49,9 @@
 ;; Autocomplete
 (install-first 'auto-complete)
 
+;; Magit
+(install-first 'magit)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Clojure mode
 ;; https://github.com/clojure-emacs/clojure-mode
