@@ -3,7 +3,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Configure Marmalade
-
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -65,9 +64,6 @@
 ;; Rainbow delimiters
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
-;; Autocomplete
-;;(add-hook 'clojure-mode-hook 'auto-complete-mode)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nREPL
 ;; https://github.com/clojure-emacs/nrepl.el
@@ -104,12 +100,9 @@
 (add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
 (add-hook 'clojure-mode-hook 'ac-nrepl-setup)
 
-;;(add-hook 'nrepl-mode-hook 'auto-complete-mode)
 
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'nrepl-mode 'clojure-mode))
-
-
 
 
 ;; Popup documentation
