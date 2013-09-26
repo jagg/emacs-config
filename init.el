@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Emacs configuration (20/9/2013)
+;; Emacs configuration for Clojure development
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Configure Marmalade
@@ -63,6 +63,9 @@
 
 ;; Rainbow delimiters
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+
+;; Enable Clojure mode for clojurescript
+(add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nREPL
